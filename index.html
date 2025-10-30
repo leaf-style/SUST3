@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获奖情况 - Janus/微流控实验室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #63b3ed;
+        }
+
+        /* 当前页面高亮 */
+        nav ul li a.active {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        /* 下方内容区域：左右完全分隔 */
+        .content-wrapper {
+            display: flex;
+            margin-top: 2rem;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        /* 左侧栏：宽度由内容决定 */
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+            white-space: nowrap;
+        }
+
+        .sidebar h3 {
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 1rem;
+            color: #1a365d;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a.active {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .sidebar a:not(.active):hover {
+            background-color: #f1f5f9;
+        }
+
+        /* 右侧内容区：剩余宽度全占 */
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+        }
+        .main-content1 {
+            background: none;
+            box-shadow: none;
+            padding: 0;
+            text-align: center; /* ✅ 新增：让内容居中 */
+        }
+      
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path d="M19.8 18.4L14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.39.5-.13 1.1.47 1.1h14.66c.6 0 .86-.6.47-1.1z"/>
+                </svg>
+                <h1>Janus/微流控实验室</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://leaf-style.github.io/SUST1/">网站首页</a></li>
+                    <li><a href="https://leaf-style.github.io/SUST2-sysjs/">实验室简介</a></li>
+                     <li><a href="https://leaf-style.github.io/SUST3/" style="color: #FFEC50; font-weight: bold;">获奖情况</a></li>
+                    <li><a href="https://leaf-style.github.io/SUST4-js/">研究团队</a></li>
+                    <li><a href="https://leaf-style.github.io/SUST5/">科研成果</a></li>
+                    <li><a href="https://leaf-style.github.io/SUST6/">项目专利</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container content-wrapper">
+        <!-- 左侧：内容区（年份独立卡片） -->
+<!-- 左侧：内容区（年份独立卡片，去外层白框） -->
+<div class="main-content" style="background: none; box-shadow: none; padding: 0;">
+
+    <section id="y2025" style="margin-bottom: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem;">
+        <h2 style="color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">2025年</h2>
+        <p></p>
+    </section>
+
+    <section id="y2024" style="margin-bottom: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem;">
+        <h2 style="color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">2024年</h2>
+        <p>1. 许兵老师荣获2024年国际青年仿生学术会议，最佳口头报告奖。</p>
+      <p>2. 许兵老师荣获2024年苏州科技大学优秀本科毕业设计优秀指导老师。</p>
+      <p>3. 许兵老师荣获2024年苏州科技大学优秀本科毕业团队优秀指导老师。</p>
+      <p>4. 闵书强荣获“苏州科技大学机械工程学院2024十佳大学生”称号。</p>
+      <p>5. 闵书强荣获“2024大学生年度人物”称号。</p>
+      <p>6. 闵书强荣获2024年硕士研究生国家奖学金。</p>
+      <p>7. 詹童欢荣获2024年“精雕杯”毕业设计大赛个人银奖。</p>
+      <p>8. 许兵老师荣获2024年“精雕杯”毕业设计大赛优秀指导老师。</p>
+      <p>9. 汪何荣获2024年度国家奖学金。</p>
+      <p>10. 于晓华荣获“苏州科技大学机械工程学院2024十佳大学生”称号。</p>
+      <p>11. 朱以杰荣获“苏州科技大学机械工程学院2024十佳大学生”称号。</p>
+    </section>
+
+    <section id="y2023" style="margin-bottom: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem;">
+        <h2 style="color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">2023年</h2>
+        <p>1. 詹童欢，周巍，刘加豪，《衣芯智检-布基微流体分析装置制造研究》荣获第十八届“挑战杯”全国大学生课外学术科技作品竞赛江苏省选拔赛二等奖。</p>
+      <p>2. 许兵老师指导《衣芯智检-布基微流体分析装置制造研究》荣获第十八届“挑战杯”全国大学生课外学术科技作品竞赛优秀指导老师。</p>
+      <p>3. 许兵老师荣获2023年度江苏省高等学校科学技术研究成果奖三等奖。</p>
+      <p>4. 闵书强荣获2023年硕士研究生国家奖学金。</p>
+      <p>5. 詹童欢，周巍，高嵩，花润，《用于循环肿瘤细胞分选的Janus织物过滤器研究》荣获第十六届全国大学生创新创业年会“优秀学术论文”。</p>
+      <p>6. 许兵老师指导的《用于循环肿瘤细胞分选的Janus织物过滤器研究》在第十六届全国大学生创新创业年会表现突出，被评为“优秀指导教师”。</p>
+      <p>7. 刘加豪荣获2023年苏州科技大学机械工程学院“十佳大学生”。</p>
+      <p>8. 詹童欢荣获2023年江苏省优秀毕业设计。</p>
+      
+    </section>
+
+    <section id="y2022" style="margin-bottom: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem;">
+        <h2 style="color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">2022年</h2>
+        <p>1. 周巍，詹童欢，戴煜超等，《“衣芯科技”—三维布基微流控POCT检测的开拓者》荣获第十八届中国国际“互联网+”大学生创新创业大赛苏州科技大学赛二等奖。</p>
+      <p>2.	詹童欢荣获苏州科技大学2022大学生年度人物。</p>
+      <p>3.	许兵老师荣获第八届全国应用型人才综合技能大赛国三等奖优秀指导老师。</p>
+      <p>4.	许兵老师指导的《“衣芯科技”—三维布基微流控POCT检测的开拓者》荣获第十八届中国国际“互联网+”大学生创新创业大赛苏州科技大学赛优秀指导老师。</p>
+    </section>
+
+</div>
+
+        <!-- 右侧：年份导航 -->
+      <div class="main-content1">
+      <div class="sidebar" style="background: #94ACB3; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem; white-space: nowrap;">
+             <h3 style="color: #FFEC50; margin-bottom: 0.5rem;">获奖情况</h3>
+            <hr style="margin: 1rem 0; border: none; border-top: 1px solid #FFEC50;">
+            <a href="#y2025" style="display: block; margin-top: 1rem; color: #ffffff; font-weight: bold;">2025年</a>
+            <a href="#y2024" style="display: block; margin-top: 1rem; color: #ffffff; font-weight: bold;">2024年</a>
+            <a href="#y2023" style="display: block; margin-top: 1rem; color: #ffffff; font-weight: bold;">2023年</a>
+            <a href="#y2022" style="display: block; margin-top: 1rem; color: #ffffff; font-weight: bold;">2022年</a>
+           
+        </div>
+    </div>
